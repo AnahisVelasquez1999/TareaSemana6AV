@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TareaSemana6AV.Put">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Actualizar Datos y Eliminar" HorizontalOptions="Center" TextColor="HotPink" FontSize="Title" />
+            <Entry x:Name="txtCodigo" Placeholder="Codigo"/>
+            <Entry x:Name="txtNombre" Placeholder="Nombre"/>
+            <Entry x:Name="txtApellido" Placeholder="Apellido"/>
+            <Entry x:Name="txtEdad" Placeholder="Edad"/>
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <Button Grid.Row="0" Grid.Column="0" Text="Actualizar" x:Name="btnActualizar" Clicked="btnActualizar_Clicked" BackgroundColor="HotPink" CornerRadius="70"/>
+                <Button Grid.Row="0" Grid.Column="1" Text="Eliminar" x:Name="btnEliminar" Clicked="btnEliminar_Clicked"  BackgroundColor="HotPink" CornerRadius="70" />
+                <Button Grid.Row="1" Grid.ColumnSpan="2" x:Name="btnRegresar" Text="Regresar" Clicked="btnRegresar_Clicked" BackgroundColor="HotPink" CornerRadius="70" />
+            </Grid>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
